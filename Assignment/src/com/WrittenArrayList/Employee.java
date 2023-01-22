@@ -1,24 +1,25 @@
-package com.pojo;
-// Creat, Read, Update, Delete
+package com.WrittenArrayList;
+
 public class Employee {
 	
-	 int id, salary;
-	 String name, dept;
-
+	int id;
+	String name, dept;
+	
+	public Employee() {}
+	
+	public Employee( int id, String name, String dept)
+	{
+		this.id=id;
+		this.name=name;
+		this.dept=dept;
+	}
+	
 	public int getId() {
 		return id;
 	}
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public int getSalary() {
-		return salary;
-	}
-
-	public void setSalary(int salary) {
-		this.salary = salary;
 	}
 
 	public String getName() {
@@ -36,10 +37,10 @@ public class Employee {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
-	
-	public String toString()
-	{
-		return id+" "+name+" "+dept+" "+salary;
+
+	@Override
+	public String toString() {
+		return id+" "+name+" "+dept;
 	}
-	
+		
 }
