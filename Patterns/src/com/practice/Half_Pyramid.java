@@ -4,10 +4,8 @@ public class Half_Pyramid {
 
 	public static void main(String[] args) {
 		// Print Half pyramid.		
-		
-		int n=4;
-		
-		for (int i=1; i<=n; i++) {   //  this line print -> * * * *  
+	
+		for (int i=1; i<=4; i++) {   //  this line print -> * * * *  
 			
 			for (int j=1; j<=i; j++) {
 				
